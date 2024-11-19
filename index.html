@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-white justify-content-center">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                    <div class="offer">
+                        <h1 class="offer_title mt-5">С помощью нас <br> вы сможете создать то, о чем</h1>
+                        <span class="offer_span">Желаете!</span>
+                        <p class="offer-text">Наши возможности + опыт позволят Вам достичь огромного успеха.
+                            Мы верим в вас! И знаем это на все 100%. Вас не остановиь!</p>
+                        <a href="#" class="button" id="button" onclick="change_color();">Узнать больше...</a>
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-12 col-sm-12">
+                    <img class="offer_img" src="img/header-img.png" alt="header-img">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+ 
+    <div class="mainPart">
+        <div class="container align-items-center justify-content-center">
+            <h2 class="question_h2  mt-5 mb-5 text-center">Что Вам необходимо?</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3">
+                    <img class="block_img" id="form_img" src="img/f3.png" alt="f3" >
+                    <h3 class="block_h3">Первый блок</h3>
+                    <p class="block_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3">
+                    <img class="block_img" id="form_img" src="img/f4.png" alt="f4" >
+                    <h3 class="block_h3">Второй блок</h3>
+                    <p class="block_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3">
+                    <img class="block_img" id="form_img" src="img/f5.png" alt="f5" >
+                    <h3 class="block_h3">Третий блок</h3>
+                    <p class="block_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <section class="form">
+        <div class="container">
+            <div class="form_h2">
+                <h2>Форма заказа обратного звонка</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <form action="" class="form_form">
+                        <input type="text" title="Введите значение" id="name" name="name" placeholder="Имя" class="form_input"  required>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="Введите свой E-mail" class="form_input" required>
+                        <input type="text" pattern="+7-(\d{3})-(\d{3})-(\d{2})-\d{2}" title="This is the template +7-(000)-000-00-00" id="telephone" type="text" name="telephone" placeholder="Телефон" class="form_input" required>
+                        <input type="text" title="Введите значение" id="theme" name="theme" placeholder="Какая тема вас интересует" class="form_input" required>
+                        <input type="submit" value="Отправить вопрос!" class="form_button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator">
+
+    </div>
+
+    <section class="form"></section>
+        <div class="container">
+            <div class="form_h2">
+                <h2>Форма подписки на новости об акциях и предложниях</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <form action="" class="form_form">
+
+                        <input  class="form_input" type="text" id="name_new" placeholder="Имя" onchange="checkName();" required />
+                        <input id="e-mail_new" placeholder="Введите свой E-mail" class="form_input" onblur="checkEmail();" required>
+                        <input type="button" value="Подписаться" class="form_button" onclick="outputData();">
+                    </form>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-md-4"><span id="first_Check"></span></div>
+                    <div class="col-md-4" style="margin-top: 90px;"><span id="second_Check"></span></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer class="footer">
+        <div class="container justify-content-center">
+            <p class="footer_p col-md-12 col-sm-12 text-center">
+                © Все на этом сайте защищено
+            </p>
+        </div>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+</body>
